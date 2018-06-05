@@ -16,71 +16,68 @@ if (name.charAt(0) > "L") {
 }
 
 //this is the alert tha displays hello world
-function sayHello(){
-  alert("hello world");
+function sayHello() {
+    alert("hello world");
 }
 
 //this checks to see age
 
-function checkAge(){
-    if (age < 21){
+function checkAge() {
+    if (age < 21) {
         alert("Sorry {{{toMarkdown}}}name{{{toMarkdown}}}, you aren't old enough to view this page!");
     }
-    else{
+    else {
         alert("You can drink anything");
     }
-    console.log(checkAge("Charles",21))
-console.log(checkAge("Abby",27))
-console.log(checkAge("James",17))
-console.log(checkAge("John",18))
+    console.log(checkAge("Charles", 21))
+    console.log(checkAge("Abby", 27))
+    console.log(checkAge("James", 17))
+    console.log(checkAge("John", 18))
 
-// my favortie veggies in an array
+    // my favortie veggies in an array
 
-var favoriteVegstables = ['carrota', 'corn', 'green beens', 'onion', 'beats'];
+    var favoriteVegstables = ['carrota', 'corn', 'green beens', 'onion', 'beats'];
 
-for (v = 0; v < favoriteVegstables.length; v++){
-    console.log(favoriteVegstables[v]);
-}
+    for (v = 0; v < favoriteVegstables.length; v++) {
+        console.log(favoriteVegstables[v]);
+    }
 
-//names and ages for people 
+    //names and ages for people 
 
-var people = [
-    {name: "Josh",
-    age: 16},
+    var people = [
+        {name: "Josh",
+            age: 16},
 
-    {name: "Don",
-    age: 93},
+        { name: "Don",
+            age: 93 },
 
-    {name: "Bobbito",
-    age: 23},
-  
-    {name: "Samantha",
-    age: 11},
+        {
+            name: "Bobbito",
+            age: 23
+        },
 
-    {name: "Fran",
-    age: 55 },
-];
+        { name: "Samantha",
+            age: 11 },
 
-for (i = 0; i < people.length; i++) {
-    checkAge(people[i].name, people[i].age);
-}
+        { name: "Fran",
+            age: 55},
+    ];
 
-// makes any word argument
+    for (i = 0; i < people.length; i++) {
+        checkAge(people[i].name, people[i].age);
+    }
+
+    // makes any word argument
 
 
-function getlength(word) {
-    return word.length;
-}
-var number = ("Hello World!")
-
-let anyWord = getLength('Hello World');
-
-let test = anyWord % 2
-
-if (test == 0) {
-    console.log('The world is nice and even!');
-}
-else {
-    console.log('The world is an odd place!');
-}
+    function getlength(word) {return word.length }
+    var number = ("Hello World!");
+     let anyWord = getLength('Hello World');
+    let test = anyWord % 2
+    if (test == 0) {
+        console.log('The world is nice and even!');
+    }
+    else {
+        console.log('The world is an odd place!');
+    }
 }
